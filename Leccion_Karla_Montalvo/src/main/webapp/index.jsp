@@ -18,13 +18,8 @@
             th { background-color: #f4f4f4; }
             .contenedor-grafico { width: 400px; margin: 20px auto; }
             .caja-formulario { 
-                /* COLOR DEL FONDO DEL CUADRO */
-                background-color: #FFCBE1;  /* Ejemplo: Un azul muy clarito (AliceBlue) */
-                
-                /* COLOR DEL BORDE (LA LÍNEA DE AFUERA) */
-                border: 2px solid #000000;  /* Ejemplo: Borde negro */
-
-                /* NO BORRES ESTO (es para la forma) */
+                background-color: #FFCBE1;
+                border: 2px solid #000000;
                 padding: 20px; 
                 display: inline-block; 
                 border-radius: 10px; 
@@ -110,12 +105,11 @@
                         labels: ['Partido A', 'Partido B', 'Partido C', 'Partido D'],
                         datasets: [{
                             data: [<%= v1 %>, <%= v2 %>, <%= v3 %>, <%= v4 %>],
-                            // AQUI SE CAMBIAN LOS COLORES:
                             backgroundColor: [
-                                '#FFCAE9', // Oro (Partido A)
-                                '#FB9EBB', // Naranja oscuro (Partido B)
-                                '#DCCCEC', // Carmesí (Partido C)
-                                '#BCD8EC'  // Verde bosque (Partido D)
+                                '#FFCAE9', 
+                                '#FB9EBB', 
+                                '#DCCCEC',
+                                '#BCD8EC'  
                             ]
                         }]
                     },
